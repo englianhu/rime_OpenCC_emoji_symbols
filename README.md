@@ -2,36 +2,29 @@
 
 #### 项目介绍
 利用OpenCC做的Emoji和特殊符号滤镜，供Rime输入法使用者使用。
-
-#### 软件架构
-软件架构说明
+基本包含Emoji 11.0的所有内容（同一人物类Emoji的不同肤色仅保留一个）。
 
 
-#### 安装教程
+#### 使用方法
 
-1. xxxx
-2. xxxx
-3. xxxx
+将es.txt和es.json放入Rime输入法的opencc文件夹下。
+在你所使用的方案的xxxx.schema.yaml文件的相应位置加入如下代码（注意缩进）：
+switches:
+  - name: show_es
+    reset: 1
+    states: [ 😔, 😀 ]
 
-#### 使用说明
+engine:
+  filters:
+    - simplifier@es_conversion
 
-1. xxxx
-2. xxxx
-3. xxxx
+es_conversion:
+  opencc_config: es.json
+  option_name: show_es
+
+加入后重新部署，就可以使用了。
 
 #### 参与贡献
 
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+1. 不明觉厉
 
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
