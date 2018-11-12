@@ -22,7 +22,7 @@ engine:
 
 es_conversion:
   opencc_config: es.json
-  option_name: show_es1. 
+  option_name: show_es
 
 ```
 
