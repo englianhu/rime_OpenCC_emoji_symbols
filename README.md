@@ -6,6 +6,7 @@
 2019.10.29 iOS13.2的新增Emoji表情内容更新
 
 #### 项目介绍
+GitHub地址：https://github.com/rtransformation/rime-opencc_emoji_symbols
 利用OpenCC做的Emoji和特殊符号滤镜，供Rime输入法使用者使用。  
 基本包含Emoji 12.0的所有内容（包括同一人物类Emoji的5个不同肤色版本）。
 
